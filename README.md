@@ -25,6 +25,18 @@ curl -fsSL https://raw.githubusercontent.com/ssesweb/macOS-Bing-Wallpaper-Setter
 
 此命令将直接执行来自 GitHub 的脚本，运行意味着您信任此来源，我们无法为可能存在的风险负责。
 
+效果为
+
+```
+123@localhost ~ % curl -fsSL https://raw.githubusercontent.com/ssesweb/macOS-Bing-Wallpaper-Setter/main/bing_wallpaper_setter.sh | bash
+⏳ 正在获取今日 Bing 壁纸信息...
+📌 今日壁纸：让树叶诉说历史
+🔗 下载 URL：https://www.bing.com/th?id=OHR.OliveGrove_ZH-CN7054006944_UHD.jpg&rf=LaDigue_1920x1080.jpg&pid=hp
+🖼 壁纸已存在：20251125_让树叶诉说历史.jpg
+🔄 正在设置壁纸...
+✅ 壁纸已成功应用到所有屏幕。
+123@localhost ~ %
+```
 
 ### ⚙️ 设置自动化 (推荐: 使用“快捷指令”)
 
@@ -61,6 +73,5 @@ curl -fsSL https://raw.githubusercontent.com/ssesweb/macOS-Bing-Wallpaper-Setter
 ### 📄 脚本依赖
 
 * macOS (原生支持 `osascript`)
-
 * `curl` (用于下载壁纸和获取 JSON 数据)
   
