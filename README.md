@@ -1,8 +1,8 @@
 # macOS-Bing-Wallpaper-Setter
+
 简易的设置必应每日壁纸 A shell script to automatically download and set daily Bing wallpaper on all macOS screens.
 
 ## 🖼 macOS 必应每日壁纸自动设置工具 (多屏幕兼容)
-
 
 **`macOS-Bing-Wallpaper-Setter`** 是一个轻量级的 Shell 脚本，用于自动下载每日最新的 Bing 壁纸，并将其设置为 macOS 桌面背景。它特别优化了在**多显示器 (Multi-Screen)** 和 **多桌面空间 (Multiple Spaces)** 环境下的兼容性。
 
@@ -15,37 +15,16 @@
 
 ### 🚀 使用方法
 
-#### 1. 克隆或下载脚本
-
-您可以将此脚本下载到您本地的任意目录。
+在终端中复制并回车
 
 **Bash**
 
 ```
-# 建议下载到您的 ~/bin 目录或类似的工具目录
-git clone https://github.com/ssesweb/macOS-Bing-Wallpaper-Setter.git
-cd macOS-Bing-Wallpaper-Setter
+curl -fsSL https://raw.githubusercontent.com/ssesweb/macOS-Bing-Wallpaper-Setter/main/bing_wallpaper_setter.sh | bash
 ```
 
-#### 2. 授予执行权限
+此命令将直接执行来自 GitHub 的脚本，运行意味着您信任此来源，我们无法为可能存在的风险负责。
 
-确保脚本拥有执行权限：
-
-**Bash**
-
-```
-chmod +x bing_wallpaper_setter.sh
-```
-
-#### 3. 手动运行测试
-
-您可以先运行一次脚本进行测试：
-
-**Bash**
-
-```
-./bing_wallpaper_setter.sh
-```
 
 ### ⚙️ 设置自动化 (推荐: 使用“快捷指令”)
 
@@ -67,16 +46,21 @@ chmod +x bing_wallpaper_setter.sh
    * 在脚本框中，输入您的脚本的 **绝对路径** ：
    
    **Bash**
-   
-   ```
-   /Users/tongli/Work/bing_wallpaper/bing_wallpaper_setter.sh
-   ```
-7. 确保底部的 **“运行时询问” (Ask Before Running)** 选项被 **关闭** ，以实现完全自动化。
+
+```
+curl -fsSL https://raw.githubusercontent.com/ssesweb/macOS-Bing-Wallpaper-Setter/main/bing_wallpaper_setter.sh | bash
+```
+
+7. 确保底部的 “运行时询问” (Ask Before Running) 选项被 **关闭** ，以实现完全自动化。
 8. 保存自动化。
+
+
 
 这样，每当您的 Mac 连接到指定的 Wi-Fi 网络时，系统将自动运行脚本，更新您的多屏幕桌面壁纸。
 
 ### 📄 脚本依赖
 
 * macOS (原生支持 `osascript`)
+
 * `curl` (用于下载壁纸和获取 JSON 数据)
+  
